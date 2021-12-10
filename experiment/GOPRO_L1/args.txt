@@ -1,0 +1,3264 @@
+execution at 2020-06-03_11-15-48
+seed: 1591150548
+num_workers: 6
+device_type: cuda
+device_index: 0
+n_GPUs: 2
+distributed: True
+launched: True
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /home/seungjun/Research/dataset
+dataset: None
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pre_trained: .
+n_scales: 3
+gaussain_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+opt_level: O1
+loss_scale: dynamic
+max_loss_scale: 1024
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: True
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+startEpoch: 1
+endEpoch: 1000
+save_every: 10
+save_results: part
+stay: False
+
+execution at 2020-06-03_11-15-48
+seed: 1591150548
+num_workers: 6
+device_type: cuda
+device_index: 0
+n_GPUs: 2
+distributed: True
+launched: True
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 1
+world_size: 1
+data_root: /home/seungjun/Research/dataset
+dataset: None
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pre_trained: .
+n_scales: 3
+gaussain_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+opt_level: O1
+loss_scale: dynamic
+max_loss_scale: 1024
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: True
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+startEpoch: 1
+endEpoch: 1000
+save_every: 10
+save_results: part
+stay: False
+
+execution at 2021-11-27_17-19-38
+seed: 1638055178
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-20-54
+seed: 1638055254
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-24-38
+seed: 1638055478
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-24-49
+seed: 1638055489
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-24-51
+seed: 1638055491
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-24-52
+seed: 1638055492
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-24-54
+seed: 1638055494
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-24-55
+seed: 1638055495
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-24-57
+seed: 1638055497
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-24-59
+seed: 1638055499
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-25-00
+seed: 1638055500
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-28-21
+seed: 1638055701
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-28-25
+seed: 1638055705
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-28-28
+seed: 1638055708
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: C:\UIC\CS-415\Project\PyTorch\Research\GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+demo_output_dir: ../results/GOPRO_Large\test\GOPR0384_11_00\blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-33-01
+seed: 1638055981
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-33-21
+seed: 1638056001
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: True
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-34-12
+seed: 1638056052
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-37-36
+seed: 1638056256
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-38-33
+seed: 1638056313
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-38-37
+seed: 1638056317
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-38-37
+seed: 1638056317
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-38-37
+seed: 1638056317
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-38-37
+seed: 1638056317
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-38-37
+seed: 1638056317
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-38-37
+seed: 1638056317
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-38-37
+seed: 1638056317
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-59-29
+seed: 1638057569
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-59-36
+seed: 1638057576
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-59-36
+seed: 1638057576
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-59-36
+seed: 1638057576
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-59-36
+seed: 1638057576
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-27_17-59-36
+seed: 1638057576
+num_workers: 7
+device_type: cpu
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: C:\Users\ssakur2/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment\GOPRO_L1
+start_epoch: 1000
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-30_03-52-44
+seed: 1638244365
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/test/GOPR0410_11_00/blur_gamma
+demo_output_dir: ../results/GOPRO_Large/test/GOPR0410_11_00/blur_gamma
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-30_07-36-11
+seed: 1638257774
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/test/GOPR0410_11_00/sharp
+demo_output_dir: ../results/GOPRO_Large/test/GOPR0410_11_00/sharp
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-11-30_08-25-12
+seed: 1638260712
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/test/GOPR0410_11_00/blur
+demo_output_dir: ../results/GOPRO_Large/test/GOPR0410_11_00/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_17-58-15
+seed: 1639072696
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/train/GOPR0372_07_01/blur
+demo_output_dir: ../results/GOPRO_Large/train/GOPR0372_07_01/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_17-59-59
+seed: 1639072799
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: True
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: part
+stay: False
+template: 
+
+execution at 2021-12-09_18-01-57
+seed: 1639072917
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/train/GOPR0372_07_01/blur
+demo_output_dir: ../results/GOPRO_Large/train/GOPR0372_07_01/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_18-14-23
+seed: 1639073663
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/train/GOPR0372_07_01/blur
+demo_output_dir: ../results/GOPRO_Large/train/GOPR0372_07_01/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_18-17-35
+seed: 1639073855
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: True
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: part
+stay: False
+template: 
+
+execution at 2021-12-09_18-19-20
+seed: 1639073960
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: True
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: part
+stay: False
+template: 
+
+execution at 2021-12-09_18-35-03
+seed: 1639074903
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/train/GOPR0372_07_01/blur
+demo_output_dir: ../results/GOPRO_Large/train/GOPR0372_07_01/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_18-35-36
+seed: 1639074936
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/train/GOPR0372_07_01/blur
+demo_output_dir: ../results/GOPRO_Large/train/GOPR0372_07_01/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_18-36-51
+seed: 1639075011
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/train/GOPR0372_07_01/blur
+demo_output_dir: ../results/GOPRO_Large/train/GOPR0372_07_01/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_18-38-26
+seed: 1639075106
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/train/GOPR0372_07_01/blur
+demo_output_dir: ../results/GOPRO_Large/train/GOPR0372_07_01/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_19-13-55
+seed: 1639077235
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/train/GOPR0372_07_01/blur
+demo_output_dir: ../results/GOPRO_Large/train/GOPR0372_07_01/blur
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_19-41-43
+seed: 1639078903
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 2
+distributed: True
+launched: True
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: GOPRO_Large
+data_train: GOPRO_Large
+data_val: None
+data_test: GOPRO_Large
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: True
+do_validate: False
+do_test: True
+demo: False
+demo_input_dir: 
+demo_output_dir: 
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: part
+stay: False
+template: 
+
+execution at 2021-12-09_20-03-22
+seed: 1639080205
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/test/New
+demo_output_dir: ../results/GOPRO_Large/test/New
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
+execution at 2021-12-09_20-26-55
+seed: 1639081615
+num_workers: 7
+device_type: cuda
+device_index: 0
+n_GPUs: 1
+distributed: False
+launched: False
+master_addr: 127.0.0.1
+master_port: 8023
+dist_backend: nccl
+init_method: env://
+rank: 0
+world_size: 1
+data_root: /root/Research/dataset
+dataset: None
+data_train: 
+data_val: 
+data_test: 
+blur_key: blur_gamma
+rgb_range: 255
+model: MSResNet
+pretrained: 
+n_scales: 3
+gaussian_pyramid: True
+n_resblocks: 19
+n_feats: 64
+kernel_size: 5
+downsample: Gaussian
+precision: single
+amp: False
+init_scale: 1024.0
+patch_size: 256
+batch_size: 16
+split_batch: 1
+augment: True
+validate_every: 10
+test_every: 10
+do_train: False
+do_validate: False
+do_test: False
+demo: True
+demo_input_dir: /content/drive/Shareddrives/Final/Research/dataset/GOPRO_Large/test/new1
+demo_output_dir: ../results/GOPRO_Large/test/new1
+lr: 0.0001
+milestones: [500, 750, 900]
+scheduler: step
+gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+loss: 1*L1
+metric: PSNR,SSIM
+save_dir: ../experiment/GOPRO_L1
+start_epoch: 1001
+end_epoch: 1000
+load_epoch: 1000
+save_every: 10
+save_results: all
+stay: False
+template: 
+
